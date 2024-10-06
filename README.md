@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O DevLinks é um projeto que mostra um portifólio com alterações do modo claro eescuro.
+O DevLinks é um projeto que mostra um portifólio com alterações do modo claro e escuro.
 
 ## 🔖 Layout
 
