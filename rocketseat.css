@@ -6,11 +6,11 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-desktop.jpg);
+  --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.1);
-  --surface-color-hover: rgba(0, 0, 0, 0.2);
-  --hightlight-color: rgba(0, 0, 0, 0.01);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --hightlight-color: rgba(0, 0, 0, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
   
 
@@ -21,8 +21,9 @@
   --bg-url: url(./assets/bg-desktop-light.jpg);
   
   --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.5);
-  --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --hightlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
 }
 body * {
@@ -32,11 +33,12 @@ body * {
 
 body {
   background: var(--bg-url) no-repeat top center;
+  height: 100vh;
 }
 
 #container {
   width: 100%;
-  max-width: 580px;
+  max-width: 588px;
   margin: auto;
 
   padding: 0 24px;
@@ -158,4 +160,14 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+@media(min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
